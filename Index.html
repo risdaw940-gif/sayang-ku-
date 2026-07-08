@@ -1,0 +1,228 @@
+   <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ageng ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+}
+
+.layer{
+    display:none;
+    animation:fade 1s;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border-radius:20px;
+    padding:40px;
+    color:white;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.layer.active{
+    display:block;
+}
+
+h1{
+    color:#FFD166;
+    margin-bottom:20px;
+}
+
+p{
+    line-height:1.9;
+    font-size:18px;
+}
+
+button{
+    margin-top:30px;
+    padding:14px 35px;
+    border:none;
+    border-radius:40px;
+    background:#FFD166;
+    color:#111;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Layer 1 -->
+<div class="layer active">
+<h1>🎂 Layer 1</h1>
+<p>
+Selamat Ulang Tahun yang ke-23, Ageng.
+<br><br>
+Hari ini adalah hari istimewa karena seseorang yang sangat berarti bagiku kembali bertambah usia.
+Semoga setiap detik di hari ini dipenuhi kebahagiaan dan doa-doa baik.
+</p>
+<button onclick="next()">Lanjut ❤️</button>
+</div>
+
+<!-- Layer 2 -->
+<div class="layer">
+<h1>✨ Layer 2</h1>
+<p>
+Di usia yang baru ini,
+semoga Allah selalu memberikan kesehatan,
+umur yang penuh berkah,
+rezeki yang luas,
+serta memudahkan setiap langkahmu menuju masa depan yang indah.
+</p>
+<button onclick="next()">Lanjut ❤️</button>
+</div>
+
+<!-- Layer 3 -->
+<div class="layer">
+<h1>🌹 Layer 3</h1>
+<p>
+Terima kasih sudah menjadi seseorang
+yang selalu berusaha menjadi lebih baik setiap harinya.
+Aku bangga melihat setiap perjuanganmu,
+meskipun mungkin tidak semuanya mudah untuk dilalui oleh mu❤️.
+</p>
+<button onclick="next()">Lanjut ❤️</button>
+</div>
+
+<!-- Layer 4 -->
+<div class="layer">
+<h1>❤️ Layer 4</h1>
+<p>
+Aku berharap senyummu tidak pernah hilang,semua 
+beban dan urusan mu dipermudah,
+dan setiap kesedihanmu selalu digantikan
+dengan kebahagiaan yang jauh lebih besar❤️.
+</p>
+<button onclick="next()">Lanjut ❤️</button>
+</div>
+
+<!-- Layer 5 -->
+<div class="layer">
+<h1>💖 Layer 5</h1>
+<p>
+Terima kasih telah hadir di dalam kehidupan aku dan memberi 
+banyak warna dalam hidupku❤️.
+Terima kasih atas setiap perhatian mu,
+waktu mu,
+kesabaran mu dalam menghadapi ego ku,
+dan kasih sayang yang, yang telah kamu berikan pada ku.
+Semoga kita selalu saling menguatkan dalam keadaan apa pun 
+dan terus saling  bersama dan saling menyayangi❤️.
+</p>
+<button onclick="next()">Lanjut ❤️</button>
+</div>
+
+<!-- Layer 6 -->
+<div class="layer">
+<h1>🌙 Layer 6</h1>
+<p>
+Aku tidak tahu bagaimana cerita kita di masa depan,
+tetapi aku berharap semesta selalu berpihak pada kita.
+Semoga langkah kita dipenuhi keberkahan,
+dan semoga setiap doa yang kita panjatkan suatu hari nanti menjadi kenyataan❤️.
+</p>
+<button onclick="next()">Ucapan Terakhir 💝</button>
+</div>
+
+<!-- Layer 7 -->
+<div class="layer">
+<h1>🎉 Happy 23rd Birthday</h1>
+<p>
+Untuk Ageng tersayang...
+<br><br>
+
+Selamat ulang tahun yang ke-23. ❤️
+
+Semoga Allah SWT selalu menjaga setiap langkahmu,
+melindungimu dari segala hal yang buruk,
+memberikan kesehatan,
+kebahagiaan,
+kesuksesan,
+dan menjadikanmu pribadi yang semakin dewasa serta bijaksana.
+
+Aku berharap semua impianmu satu per satu terwujud,
+dan semoga senyummu ❤️ selalu menjadi alasan indah bagi orang-orang di sekitarmu untuk ikut bahagia.
+
+Terima kasih karena sudah menjadi bagian dari hidupku❤️.
+
+Aku akan selalu mendoakan yang terbaik untukmu,
+hari ini,
+besok,
+dan seterusnya.
+
+I Love You ❤️
+
+Happy Birthday, Ageng.
+</p>
+
+<button onclick="location.reload()">
+Mulai Lagi 🎂
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+let current = 0;
+
+const layer = document.querySelectorAll(".layer");
+
+function next(){
+
+layer[current].classList.remove("active");
+
+current++;
+
+if(current < layer.length){
+
+layer[current].classList.add("active");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
